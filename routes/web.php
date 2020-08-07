@@ -20,3 +20,9 @@ Route::post('/user/reg','User\UserController@regDo');
 Route::get('/user/login','User\UserController@login');
 Route::post('/user/login','User\UserController@loginDo');
 Route::get('/user/center','User\UserController@center');
+
+
+Route::get('/users/regs','Users\UsersController@regs');//注册
+Route::post('/users/regs','Users\UsersController@regsDo');//执行注册
+Route::get('/users/logins','Users\UsersController@logins');//登录
+Route::post('/users/logins','Users\UsersController@loginsDo');//执行登录
